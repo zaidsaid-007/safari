@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SafariGuide"
+        tools:targetApi="31">
+        <activity
+            android:name=".Bogoria"
+            android:exported="false" />
+        <activity
+            android:name=".Ngonghills"
+            android:exported="false" />
+        <activity
+            android:name=".Msaoldtown"
+            android:exported="false" />
+        <activity
+            android:name=".Tsavo"
+            android:exported="false" />
+        <activity
+            android:name=".Fortjesus"
+            android:exported="false" />
+        <activity
+            android:name=".Lkvictoria"
+            android:exported="false" />
+        <activity
+            android:name=".Karura"
+            android:exported="false" />
+        <activity
+            android:name=".Lknakuru"
+            android:exported="false" />
+        <activity
+            android:name=".Diani"
+            android:exported="false" />
+        <activity
+            android:name=".Amboseli"
+            android:exported="false" />
+        <activity
+            android:name=".Hellsgate"
+            android:exported="false" />
+        <activity
+            android:name=".Mtkenya"
+            android:exported="false" />
+        <activity
+            android:name=".Masaaimara"
+            android:exported="false" />
+        <activity
+            android:name=".Book"
+            android:exported="false" />
+        <activity
+            android:name=".Hotels"
+            android:exported="false" />
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

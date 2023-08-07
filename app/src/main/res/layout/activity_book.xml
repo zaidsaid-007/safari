@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/temporaryBlack"
+    android:background="@drawable/hotel"
+    android:backgroundTintMode="src_atop"
+    tools:context=".Book">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/font"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/font"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_below="@id/name"
+            android:id="@+id/price"
+            android:textColor="@color/white"
+            android:text="Price: "
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:fontFamily="@font/font"
+            android:background="@color/white"
+            android:id="@+id/quantity"
+            android:inputType="number"
+            android:layout_below="@id/price"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Nights"
+            android:text="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:fontFamily="@font/font"
+            android:layout_below="@id/quantity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:onClick="book"
+            android:id="@+id/book"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Booking"
+            android:fontFamily="@font/font"
+            android:layout_below="@id/book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:onClick="checkBooking"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>
